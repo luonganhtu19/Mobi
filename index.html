@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MobiTest</title>
+    <style>
+        fieldset{
+            display: inline-block;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            font-size: 25px;
+            width: 50px;
+            height: 150px;
+        }
+        .btn {
+            width: 125px;
+            height: 10px;
+        }
+        .btn input{
+            width: 150px;
+            height: 50px;
+        }
+        .dis{
+            width: 310px;
+            height:350px;
+            border: 1px solid black;
+        }
+        .dis p{
+            text-align: center;
+            /*font-size: 10px;*/
+            /*padding-top: 100px;*/
+        }
+        .dis input{
+
+        }
+    </style>
+
+</head>
+<body>
+<fieldset >
+    <legend>IPHONE 10</legend>
+    <p class="dis" id="tshow1" style="background: pink"></p>
+    <table style="border: 1px solid black">
+        <tr>
+            <td class="btn"><input type="button" id="cancel" onclick="draftMess(1)" value="Cancel"></td>
+            <td class="btn"><input type="button" id="ok1" onclick="sendMess(1)" value="OK"></td>
+        </tr>
+        <tr>
+            <td  class="btn" ><input  type="button"   id="inputMess" onclick="inputMess(1)" value="Soan Mess"></td>
+            <td  class="btn"><input  type="button" id="on-off" onclick="turnOffOn(1)" value="On/OF" placeholder="1"></td>
+        </tr>
+        <tr>
+            <td class="btn" ><input type="button" id="inbox" onclick="listSent(1)" value="Hop thu di"></td>
+            <td class="btn" ><input  type="button" id="received" onclick="listReceive(1)" value="Hop thu den"></td>
+        </tr>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>Nokia</legend>
+    <p class="dis" id="tshow2" style="background: white"></p>
+    <table style="border: 1px solid black">
+        <tr>
+            <td class="btn"><input type="button" id="cancel1" onclick="draftMess(2)" value="Cancel"></td>
+            <td class="btn"><input type="button" id="ok2" onclick="sendMess(2)" value="OK"></td>
+        </tr>
+        <tr>
+            <td  class="btn" ><input  type="button"   id="inputMess2" onclick="inputMess(2)" value="Soan Mess"></td>
+            <td  class="btn"><input  type="button" id="on-off2" onclick="turnOffOn(2)" value="On/OF" placeholder="1"></td>
+        </tr>
+        <tr>
+            <td class="btn" ><input type="button" id="inbox2" onclick="listReceive(2)" value="Hop thu di"></td>
+            <td class="btn" ><input  type="button" id="received2" onclick="listSent(2)" value="Hop thu den"></td>
+        </tr>
+    </table>
+</fieldset>
+</body>
+<script src="ObjectData.js"></script>
+</html>
